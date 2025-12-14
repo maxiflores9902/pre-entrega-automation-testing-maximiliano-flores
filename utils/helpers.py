@@ -5,7 +5,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
-def iniciar_driver():
+def start_driver():
     """Inicia el driver de Chrome con opciones basicas"""
     options = Options()
     options.add_argument("--start-maximized")
@@ -14,7 +14,7 @@ def iniciar_driver():
     return driver
 
 
-def esperar_elemento(driver, by, locator, timeout=10):
+def wait_element(driver, by, locator, timeout=10):
     """Espera de un elemento visible"""
     wait = WebDriverWait(driver, timeout)
     return wait.until(EC.visibility_of_element_located((by, locator)))
