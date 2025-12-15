@@ -2,7 +2,7 @@ name: CI pytest
 
 on:
   push:
-    branches: [main]
+    branches: [main, last-version]
 
 jobs:
   test:
