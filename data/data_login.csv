@@ -1,0 +1,3 @@
+user,password,works
+standard_user,secret_sauce,true
+invalid_user,invalid_pass,false
