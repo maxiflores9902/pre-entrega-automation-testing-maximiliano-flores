@@ -4,7 +4,7 @@ import pathlib
 audit_dir = pathlib.Path('logs')
 audit_dir.mkdir(exist_ok=True)
 
-log_file = audit_dir/ 'suite.log'
+log_file = audit_dir/ 'file.log'
 logger = logging.getLogger("AppTest")
 logger.setLevel(logging.INFO)
 
